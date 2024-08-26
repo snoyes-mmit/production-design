@@ -1,4 +1,3 @@
-Please adjust the following areas of the Formulary Template in both html files, one is written for our digital and printable (PDF) version and the other our email:
 
 Reverse the order of the header section. Instead of the logo on the right, design would like the logo on the left and the 'Local Coverage Update' to the right.
 
