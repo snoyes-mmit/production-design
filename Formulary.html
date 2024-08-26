@@ -4,7 +4,7 @@
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <meta name="format-detection" content="telephone=no">
   <meta name="viewport" content="width=device-width, initial-scale=1.0 macimum-scale-1.0; user-scalable=no;">
-  <title>Formulary</title>
+  <title>Norstella Formulary</title>
   <style>
     /* Reset CSS */
     html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
@@ -137,7 +137,8 @@
       body {
         -webkit-print-color-adjust: exact!important;
       }
-      .coverage-grid {
+      .norstella-grid {
+        margin-top: 40px;
         height: 345px;
       }
       .table-body-border td {
@@ -165,13 +166,12 @@
   <div class="wrapper">
     <div class="header">
       <h2 class="font18pt">LOCAL COVERAGE UPDATE</h2>
-      
-      <img src="https://placehold.co/900x270" alt="Your Brand Logo Here"  style="width: 270px; height: 60px; padding-right: 30px; position: relative; top: 7px;">
+      <img src="https://ftvassets.cdn.mmitnetwork.com/templates2/Sunny/images/norstella-logo cropped.png" alt="Your Brand Logo Here"  style="width: 270px; height: 60px; padding-right: 30px; position: relative; top: 7px;">
     </div>
     <div class="main-body font9pt">
-      <h1 class="font27pt">More than [Percentage Variable]% of patients in <br>your area have access</h1>
-      <h2 class="font14pt">Coverage details in [territory]</h2>
-      <table class="coverage-grid" border="0" cellspacing="0" cellpadding="0" style="width: 100%;">
+      <h1 class="font27pt">More than {{coveragePercentage}}% of patients in <br>your area have access to Norstella</h1>
+      <h2 class="font14pt">Norstella coverage details in {{territoryName}}</h2>
+      <table class="norstella-grid" border="0" cellspacing="0" cellpadding="0" style="width: 100%;">
         <colgroup>
           <col style="width: 60%;">
           <col style="width: 20%;">
@@ -179,26 +179,26 @@
         </colgroup>
         <thead>
           <tr class="table-head" style="color: #ffffff; text-align: left; font-weight: bold; font-size: 12pt;">
-            <th style="background-color: #57c3b7; padding: 9px 0 9px 10px; border-left: 1px solid #ffffff; border-right: 1px solid #ffffff;">Plan</th>
-            <th style="background-color: #d3d3d3; padding: 9px 0 9px 0; color: #ffffff; text-align: center; border-right: 1px solid #ffffff;">Group</th>
+            <th style="background-color: #57c3b7; padding: 9px 0 9px 10px; border-left: 1px solid #ffffff; border-right: 1px solid #ffffff;">Health Plan</th>
+            <th style="background-color: #d3d3d3; padding: 9px 0 9px 0; color: #ffffff; text-align: center; border-right: 1px solid #ffffff;">Channel</th>
             <th style="background-color: #d3d3d3; padding: 9px 0 9px 0; color: #ffffff; text-align: center; border-right: 1px solid #ffffff;">Coverage<sup>&#42;</sup></th>
           </tr>
         </thead>
         <tbody>
-          [#plans]
+          {{#plans}}
             <tr class="table-body-border">
-              <td style="padding: 12px 0 12px 10px; border-top: none;">[variable]</td>
-              <td style="padding: 12px 0 12px 0; border-top: none; text-align: center;">[variable]</td>
-              <td style="padding: 12px 0 12px 0; border-top: none; text-align: center;">[variable]</td>
+              <td style="padding: 12px 0 12px 10px; border-top: none;">{{name}}</td>
+              <td style="padding: 12px 0 12px 0; border-top: none; text-align: center;">{{channel}}</td>
+              <td style="padding: 12px 0 12px 0; border-top: none; text-align: center;">{{DisplayStatus}}</td>
             </tr>
-          [/plans]
+          {{/plans}}
         </tbody>
       </table>
       <div class="source-wrapper">
-        <p class="font10pt"><sup>&#42;</sup>Based on reported coverage as of [monthName] [year]. Source: Variable LLC.</p>
-        <p class="font10pt">Health plans ranked by number of lives. Percentage based on number of lives with plans that have formulary.</p>
+        <p class="font10pt"><sup>&#42;</sup>Based on reported coverage as of {{monthName}} {{year}}. Source: Managed Markets Insight & Technology LLC.</p>
+        <p class="font10pt">Health plans ranked by number of lives. Percentage based on number of lives with plans that have Norstella on formulary.</p>
       </div>
-      <img src="https://placehold.co/950x250" alt="Patient Access Card and Copay Template" style="width: 100%;">
+      <img src="https://ftvassets.cdn.mmitnetwork.com/templates2/Sunny/images/Copay.png" alt="Patient Access Card and Copay Template" style="width: 100%;">
     </div>
     <div class="footer font7pt">
       <p class="font10pt your-company-logo">YOUR COMPANY LOGO HERE</p>

@@ -13,7 +13,7 @@
   <meta name="format-detection" content="telephone=no">
   <meta name="viewport" content="width=device-width, initial-scale=1.0 macimum-scale-1.0; user-scalable=no;">
   <meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE">
-  <title>Formulary Email</title>
+  <title>Norstella Formulary Email</title>
   <style>
   html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
     margin: 0;
@@ -70,10 +70,10 @@
                   </colgroup>
                   <tr>
                     <td>
-                      <img src="https://placehold.co/950x250" alt="Formulary Update Statement" border="0" width="400" style="max-width:400px; border:0; outline:none; text-decoration:none;">
+                      <img src="https://ftvassets.cdn.mmitnetwork.com/templates2/Sunny/images/Norstella_Formulary_Grid_Update_Statement.png" alt="Furmulary Update Statement" border="0" width="400" style="max-width:400px; border:0; outline:none; text-decoration:none;">
                     </td>
                     <td>
-                      <img src="https://placehold.co/900x270" alt="Your Brand Logo Here" border="0" align="right" width="270" style="max-width:350px; border:0; outline:none; text-decoration:none; width: 270px; height: 60px; padding-right: 10px; mso-padding-left-alt: 180px;">
+                      <img src="https://ftvassets.cdn.mmitnetwork.com/templates2/Sunny/images/norstella-logo cropped.png" alt="Your Brand Logo Here" border="0" align="right" width="270" style="max-width:350px; border:0; outline:none; text-decoration:none; width: 270px; height: 60px; padding-right: 10px; mso-padding-left-alt: 180px;">
                     </td>
                   </tr>
                 </table>
@@ -85,7 +85,7 @@
                 <table border="0" cellspacing="0" cellpadding="0">
                   <tr>
                     <td style="font-size: 27pt; font-weight: bold; color: #57c3b7; text-align: left; padding: 15px 0 5px 20px; line-height: 1.1;">
-                      <h1>More than [Percentage Variable]% of patients in <br>your area have access</h1>
+                      <h1>More than {{coveragePercentage}}% of patients in <br>your area have access to Norstella</h1>
                     </td>
                   </tr>
                 </table>
@@ -97,7 +97,7 @@
                 <table border="0" cellspacing="0" cellpadding="0">
                   <tr>
                     <td class="lower-header" style="font-size: 14pt; font-weight: bold; color: #58595b; text-align: left; padding: 10px 0 30px 20px;">
-                      <h1 style="font-size: 14pt;">Coverage details in [territory]</h1>
+                      <h1 style="font-size: 14pt;">Norstella coverage details in {{territoryName}}</h1>
                     </td>
                   </tr>
                 </table>
@@ -106,7 +106,7 @@
             <!-- Grid -->
             <tr>
               <td align="center" style="padding: 5px 0; border-collapse: collapse;">
-                <table border="0" cellspacing="0" cellpadding="0" style="width: 96%;">
+                <table class="norstella-grid" border="0" cellspacing="0" cellpadding="0" style="width: 96%;">
                   <colgroup>
                     <col>
                     <col>
@@ -114,17 +114,19 @@
                   </colgroup>
                   <thead>
                     <tr class="table-head" style="color: #ffffff; text-align: left; font-weight: bold; font-size: 12pt; mso-line-height-rule: exactly;">
-                      <th style="background-color: #57c3b7; padding: 8px 0 8px 10px; border-left: 1px solid #ffffff; border-right: 1px solid #ffffff; mso-line-height-rule: exactly; text-align: left;">Plan</th>
-                      <th style="background-color: #d3d3d3; padding: 8px 0 8px 0; text-align: center; border-right: 1px solid #ffffff; mso-line-height-rule: exactly; width: 165px;">Group</th>
+                      <th style="background-color: #57c3b7; padding: 8px 0 8px 10px; border-left: 1px solid #ffffff; border-right: 1px solid #ffffff; mso-line-height-rule: exactly; text-align: left;">Health Plan</th>
+                      <th style="background-color: #d3d3d3; padding: 8px 0 8px 0; text-align: center; border-right: 1px solid #ffffff; mso-line-height-rule: exactly; width: 165px;">Channel</th>
                       <th style="background-color: #d3d3d3; padding: 8px 0 8px 0; text-align: center; border-right: 1px solid #ffffff; mso-line-height-rule: exactly; width: 165px;">Coverage<sup>&#42;</sup></th>
                     </tr>
                   </thead>
                   <tbody>
+                    {{#plans}}
                       <tr class="table-body-border" style="mso-line-height-rule: exactly;">
-                        <td style="border: 1px solid #ffffff; font-size: 9pt; color: #58595b; background-color: #f1f2f2; padding: 11px 0 11px 10px; border-top: none;">[variable]</td>
-                        <td style="border: 1px solid #ffffff; font-size: 9pt; color: #58595b; background-color: #f1f2f2; padding: 11px 0 11px 0; border-top: none; text-align: center;">[variable]</td>
-                        <td style="border: 1px solid #ffffff; font-size: 9pt; color: #58595b; background-color: #f1f2f2; padding: 11px 0 11px 0; border-top: none; text-align: center;">[variable]</td>
+                        <td style="border: 1px solid #ffffff; font-size: 9pt; color: #58595b; background-color: #f1f2f2; padding: 11px 0 11px 10px; border-top: none;">{{name}}</td>
+                        <td style="border: 1px solid #ffffff; font-size: 9pt; color: #58595b; background-color: #f1f2f2; padding: 11px 0 11px 0; border-top: none; text-align: center;">{{channel}}</td>
+                        <td style="border: 1px solid #ffffff; font-size: 9pt; color: #58595b; background-color: #f1f2f2; padding: 11px 0 11px 0; border-top: none; text-align: center;">{{DisplayStatus}}</td>
                       </tr>
+                    {{/plans}}
                   </tbody>
                 </table>
               </td>
@@ -135,8 +137,8 @@
                 <table border="0" cellspacing="0" cellpadding="0">
                   <tr>
                     <td style="font-size: 10pt; padding: 10px 0 40px 20px; color: #58595b;">
-                      <p style="padding-bottom: 5px; margin: 0;"><sup>&#42;</sup>Based on reported coverage as of [monthName], [year]. Source: Variable LLC.</p>
-                      <p style="margin: 0;">Health plans ranked by number of lives. Percentage based on number of lives with plans that have formulary.</p>
+                      <p style="padding-bottom: 5px; margin: 0;"><sup>&#42;</sup>Based on reported coverage as of {{monthName}}, {{year}}. Source: Managed Markets Insight & Technology LLC.</p>
+                      <p style="margin: 0;">Health plans ranked by number of lives. Percentage based on number of lives with plans that have Norstella on formulary.</p>
                     </td>
                   </tr>
                 </table>
@@ -148,7 +150,7 @@
                 <table border="0" cellspacing="0" cellpadding="0" style="max-width:800px;">
                   <tr>
                     <td align="center" style="padding: 0 0 25px; margin: 0 auto;">
-                      <img src="https://placehold.co/950x250" alt="Patient Access Card and Copay Template" border="0" width="550" style="width:550px; border:0; outline:none; text-decoration:none;">
+                      <img src="https://ftvassets.cdn.mmitnetwork.com/templates2/Sunny/images/Copay.png" alt="Patient Access Card and Copay Template" border="0" width="550" style="width:550px; border:0; outline:none; text-decoration:none;">
                     </td>
                   </tr>
                 </table>
