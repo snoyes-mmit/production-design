@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0 macimum-scale-1.0; user-scalable=no;">
+  <title>Formulary</title>
+  <style>
+    /* Reset CSS */
+    html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+      margin: 0;
+      padding: 0;
+      border: 0;
+      font-size: 100%;
+      font: inherit;
+      vertical-align: baseline;
+    }
+    /* HTML5 display-role reset for older browsers */
+    article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+      display: block;
+    }
+    body {
+      line-height: 1;
+    }
+    ol, ul {
+      list-style: none;
+    }
+    blockquote, q {
+      quotes: none;
+    }
+    blockquote:before, blockquote:after,
+    q:before, q:after {
+      content: '';
+      content: none;
+    }
+    table {
+      border-collapse: collapse;
+      border-spacing: 0;
+    }
+    /* End of Reset */
+    /* Custom Styles */
+    :root {
+    --main: #57c3b7;
+    --source: #808285;
+    --footer-variables: #58595b;
+    --white: #ffffff;
+    --black: #000000;
+    --grey-shading: #f1f2f2;
+    }
+    .font27pt {
+      font-size: 27pt;
+    }
+    .font18pt {
+      font-size: 18pt;
+    }
+    .font14pt {
+      font-size: 14pt;
+    }
+    .font12pt {
+      font-size: 12pt;
+    }
+    .font10pt {
+      font-size: 10pt;
+    }
+    .font9pt {
+      font-size: 9pt;
+    }
+    .font7pt {
+      font-size: 7pt;
+    }
+    body {
+      overflow-x: hidden;
+      font-family: Arial, sans-serif!important;
+    }
+    .header {
+      display: flex;
+      justify-content: space-between;
+      padding-top: 25px; 
+    }
+    .header h2 {
+      font-weight: bold;
+      color: var(--white);
+      background-color: var(--main);
+      height: 73px;
+      line-height: 68px;
+      text-align: center;
+      border-radius: 0 0 15px 0;
+      padding: 0 15px 0 40px;
+    }
+    .main-body {
+      padding: 0 50px 15px 50px;
+    }
+    .main-body h1 {
+      font-weight: bold;
+      color: var(--main);
+      line-height: 1.1;
+      padding-top: 20px;
+    }
+    .main-body h2 {
+      font-weight: bold;
+      color: var(--footer-variables);
+      padding: 15px 0 30px 0;
+    }
+    .main-body p {
+      color: var(--footer-variables);
+      line-height: 1.2;
+    }
+    .source-wrapper {
+      padding: 15px 0 40px 0;
+      word-spacing: -1px;
+    }
+    .table-body-border td {
+      border: 1px solid var(--white);
+      font-size: 9pt;
+      color: var(--footer-variables);
+      background-color: var(--grey-shading);
+    }
+    .footer {
+      display: flex;
+      padding: 0 50px 30px 50px;
+      color: var(--footer-variables);
+    }
+    .your-company-logo {
+      padding: 9px;
+      font-weight: bold;
+      border: 1px solid var(--black);
+      margin-right: 20px;
+      color: var(--black);
+    }
+    .your-brand-here p:first-child {
+      padding: 5px 0 2px 0;
+    }
+    .hide {
+      display: none;
+    }
+    @media print {
+      body {
+        -webkit-print-color-adjust: exact!important;
+      }
+      .norstella-grid {
+        height: 345px;
+      }
+      .table-body-border td {
+        padding: 9px 0 9px 10px!important;
+        vertical-align: middle;
+        border-left: none!important;
+      }
+      .table-head th {
+        border-left: none!important;
+        padding: 9px 0 9px 10px!important;
+      }
+      .lower-header {
+        padding: 10px 0 10px 20px!important;
+      }
+      .hide {
+        display: block !important;
+      }
+      .show {
+        display: none !important;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="header">
+      <h2 class="font18pt">LOCAL COVERAGE UPDATE</h2>
+      
+      <img src="https://placehold.co/900x270" alt="Your Brand Logo Here"  style="width: 270px; height: 60px; padding-right: 30px; position: relative; top: 7px;">
+    </div>
+    <div class="main-body font9pt">
+      <h1 class="font27pt">More than [Percentage Variable]% of patients in <br>your area have access</h1>
+      <h2 class="font14pt">Coverage details in [territory]</h2>
+      <table class="norstella-grid" border="0" cellspacing="0" cellpadding="0" style="width: 100%;">
+        <colgroup>
+          <col style="width: 60%;">
+          <col style="width: 20%;">
+          <col style="width: 20%;">
+        </colgroup>
+        <thead>
+          <tr class="table-head" style="color: #ffffff; text-align: left; font-weight: bold; font-size: 12pt;">
+            <th style="background-color: #57c3b7; padding: 9px 0 9px 10px; border-left: 1px solid #ffffff; border-right: 1px solid #ffffff;">Plan</th>
+            <th style="background-color: #d3d3d3; padding: 9px 0 9px 0; color: #ffffff; text-align: center; border-right: 1px solid #ffffff;">Group</th>
+            <th style="background-color: #d3d3d3; padding: 9px 0 9px 0; color: #ffffff; text-align: center; border-right: 1px solid #ffffff;">Coverage<sup>&#42;</sup></th>
+          </tr>
+        </thead>
+        <tbody>
+          [#plans]
+            <tr class="table-body-border">
+              <td style="padding: 12px 0 12px 10px; border-top: none;">[variable]</td>
+              <td style="padding: 12px 0 12px 0; border-top: none; text-align: center;">[variable]</td>
+              <td style="padding: 12px 0 12px 0; border-top: none; text-align: center;">[variable]</td>
+            </tr>
+          [/plans]
+        </tbody>
+      </table>
+      <div class="source-wrapper">
+        <p class="font10pt"><sup>&#42;</sup>Based on reported coverage as of [monthName] [year]. Source: Variable LLC.</p>
+        <p class="font10pt">Health plans ranked by number of lives. Percentage based on number of lives with plans that have formulary.</p>
+      </div>
+      <img src="https://placehold.co/950x250" alt="Patient Access Card and Copay Template" style="width: 100%;">
+    </div>
+    <div class="footer font7pt">
+      <p class="font10pt your-company-logo">YOUR COMPANY LOGO HERE</p>
+      <div class="your-brand-here">
+        <p>Your Company Trademark</p>
+        <p class="show">Template Job Code [Digital-FEB-202421]</p>
+        <P class="hide">Template Job Code [Print-FEB-202421]</P>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
